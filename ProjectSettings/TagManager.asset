@@ -9,6 +9,10 @@ TagManager:
   - Triplet
   - Wall
   - Enemy
+  - Antenna
+  - Alert
+  - Danger
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -18,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Post-processing
   - 
   - 
   - 

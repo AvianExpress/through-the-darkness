@@ -47,6 +47,9 @@ MonoBehaviour:
   pfRadarPing: {fileID: 7310280457883924801, guid: b2246f3cc838fc843a280560cd284361,
     type: 3}
   rangeMax: 150
+  sourcePlayer: 0
+  rangeSpeed: 100
+  delayFade: 0
 --- !u!1 &2297795110079472258
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +76,7 @@ Transform:
   m_GameObject: {fileID: 2297795110079472258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2297795109202977043}
   m_RootOrder: 0
@@ -117,7 +120,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ae09991f225d4514e992cd462c406684, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72954f3158d72bc488f2cf7e4819e4be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

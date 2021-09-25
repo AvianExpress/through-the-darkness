@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject gameover;
+    public GameObject gamewon;
+    public AudioSource crack;
+    public AudioSource staticSound;
+    public AudioSource pickup;
+    public AudioSource shutdown;
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Enemy"))
+        {   
+            crack.Play();
+            gameover.SetActive(true);
+            staticSound.Stop();
+            Destroy(gameObject);
+        }
+        if (other.CompareTag("Antenna"))
+        {   
+            Destroy(other.gameObject);
+            shutdown.Play();
+            gamewon.SetActive(true);
+            staticSound.Stop();
+            Destroy(gameObject);
+            
+        }
+        if (other.CompareTag("Item"))
+        {   
+            pickup.Play();
+        }
     }
 }
